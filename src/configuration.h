@@ -35,6 +35,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #endif
 
 // If app version is not specified we assume we are not being invoked by the build script
+#define HW_VERSION_EU865
 #ifndef HW_VERSION
 #error HW_VERSION, and HW_VERSION_countryname must be set by the build environment
 #endif
