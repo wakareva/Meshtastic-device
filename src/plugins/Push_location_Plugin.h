@@ -5,13 +5,13 @@
 /**
  * A simple example plugin that just replies with "Message received" to any message it receives.
  */
-class Push_Location_Plugin : public SinglePortPlugin
+class ReplyPlugin2 : public SinglePortPlugin
 {
   public:
     /** Constructor
      * name is for debugging output
      */
-    Push_Location_Plugin() : SinglePortPlugin("reply", PortNum_PRIVATE_APP) {}
+    ReplyPlugin2() : SinglePortPlugin("reply", PortNum_PRIVATE_APP) {}
 
   protected:
 
