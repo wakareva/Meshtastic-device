@@ -5,7 +5,7 @@
 #include "MeshTypes.h"
 #include "Observer.h"
 #include "PointerQueue.h"
-#include "mesh.pb.h"
+#include "airtime.h"
 
 #define MAX_TX_QUEUE 16 // max number of packets which can be waiting for transmission
 
@@ -36,7 +36,7 @@ typedef struct {
  *
  * This defines the SOLE API for talking to radios (because soon we will have alternate radio implementations)
  */
-class RadioInterface 
+class RadioInterface
 {
     friend class MeshRadio; // for debugging we let that class touch pool
     PointerQueue<MeshPacket> *rxDest = NULL;
